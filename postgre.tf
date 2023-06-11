@@ -30,8 +30,8 @@ resource "aws_security_group" "postgres" {
 ####################################################################
 resource "aws_security_group_rule" "postgres_ingress" {
   type        = "ingress"
-  from_port   = 5432
-  to_port     = 5432
+  from_port   = 5431
+  to_port     = 5431
   protocol    = "tcp"
   cidr_blocks = ["0.0.0.0/0"]
 
